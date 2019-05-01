@@ -12,8 +12,10 @@
       if($connection->query($sql) === TRUE){
         echo "Sucessfully registered new user.";
       }else{
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $connection->error;
       }
+
+      //$connection->close();
     ?>
 
 	Your ID is: <?php echo $_POST["user_id"]; ?>
