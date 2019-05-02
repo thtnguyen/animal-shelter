@@ -27,10 +27,6 @@
       }else{
         echo "Error: " . $sql . "<br>" . $connection->error;
       }
-      
-
-
-      //$connection->close();
     ?>
 
 	Your ID is: <?php echo $_POST["user_id"]; ?>

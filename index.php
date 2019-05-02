@@ -11,22 +11,11 @@
     <a href="registerForm.php">Register User</a>
 		<br/>
 
-    <a href="animalForm.php">New Animal</a>
+    <a href="animalForm.php">Add New Animal</a>
+		<br/>
+
+    <a href="animalChangeList.php">Update An Animal</a>
 		<br/>
 		
-    
-    <?php
-    //  if($connection->query("INSERT INTO user (User_ID) VALUES ('10000000')")=== TRUE)
-    //     echo "New User record inserted.";
-    //  else
-    //     echo "Error inserting record.";
-    //  $result = $connection->query("SELECT User_ID from user");
-    //  if($result->num_rows > 0){
-    //     while($row = $result->fetch_assoc())
-    //       echo $row[User_ID] . "<br>";
-    //   }
-    //  else echo "Query error";
-    //   $connection->close();
-    ?>
   </body>
 </html>

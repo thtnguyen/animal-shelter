@@ -16,8 +16,6 @@
       }else{
         echo "Error: " . $sql . "<br>" . $connection->error;
       }
-
-      //$connection->close();
     ?>
 
 	The new rodent ID is: <?php echo $rodent_id; ?>

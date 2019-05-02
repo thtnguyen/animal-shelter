@@ -17,8 +17,6 @@
       }else{
         echo "Error: " . $sql . "<br>" . $connection->error;
       }
-
-      //$connection->close();
     ?>
 
 	The new cat ID is: <?php echo $cat_id; ?>

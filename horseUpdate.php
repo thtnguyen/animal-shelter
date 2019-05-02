@@ -14,8 +14,6 @@
       }else{
         echo "Error: " . $sql . "<br>" . $connection->error;
       }
-
-      //$connection->close();
     ?>
 
 	The new horse ID is: <?php echo $horse_id; ?>

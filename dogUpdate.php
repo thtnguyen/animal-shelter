@@ -17,8 +17,6 @@
       }else{
         echo "Error: " . $sql . "<br>" . $connection->error;
       }
-
-      //$connection->close();
     ?>
 
 	The new dog ID is: <?php echo $dog_id; ?>
