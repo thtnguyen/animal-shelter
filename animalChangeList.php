@@ -18,7 +18,8 @@
         $desc = $row[Description];
         $name = $row[Name];
 
-        echo "<p>ID: " . $id . "   Name: " . $name . "   Description: " . $desc . " <a href='animalChangeForm.php?id=$id'>Update this animal</a>";
+        echo "<p>ID: " . $id . "   Name: " . $name . "   Description: " . $desc . " <a href='animalChangeForm.php?id=$id'>Update this animal</a> ";
+        echo " || <a href='animalDelete.php?id=$id'>Delete this animal</a>";
       }
     }else{
       
