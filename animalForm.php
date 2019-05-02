@@ -11,8 +11,10 @@
       include("connect.php");
       $connection = connectToDB();
      
-      $animals = $connection->query("SELECT Animal_ID from animal");
-      echo $animals->num_rows+1;
+      // $animals = $connection->query("SELECT Animal_ID from animal");
+      // echo $animals->num_rows+1;
+      $animals = $connection->query("SELECT MAX(Animal_ID) as 'max' from animal")->fetch_assoc();
+      echo $animals["max"]+1;
       $connection->close();
       ?>
       readonly><br>

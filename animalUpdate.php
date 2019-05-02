@@ -11,7 +11,7 @@
       $id = $_POST["animal_id"];
       $name = $_POST["animal_name"];
       $age = $_POST["animal_age"];
-      $color = $_POST["animal_color"];
+      $color = strtolower($_POST["animal_color"]);
       $description = $_POST["animal_desc"];
       $breed = $_POST["animal_breed"];
       $size = $_POST["animal_size"];

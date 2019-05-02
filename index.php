@@ -15,13 +15,16 @@
     <a href="animalForm.php">Add New Animal</a>
 		<br>
 
-    <a href="animalChangeList.php">Update/Delete/View Inquiries Of An Animal</a>
+    <a href="animalChangeList.php">Update/Delete/View Inquiries of an Animal</a>
 		<br>
 		
     <a href="userQueryList.php">View Donations & Adoptions</a>
     <br>
 
     <a href="donationSearch.php">Search for a Donation</a>
+    <br>
+
+    <a href="filterForm.php">Search for an Animal</a>
     <br>
 
   </body>
