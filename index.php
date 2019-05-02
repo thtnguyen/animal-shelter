@@ -10,16 +10,19 @@
     <h1 class="header"> Animal Shelter </h1>
 
     <a href="registerForm.php">Register User</a>
-		<br/>
+		<br>
 
     <a href="animalForm.php">Add New Animal</a>
-		<br/>
+		<br>
 
     <a href="animalChangeList.php">Update An Animal</a>
-		<br/>
+		<br>
 		
     <a href="userQueryList.php">View Donations & Adoptions</a>
-    <br/>
+    <br>
+
+    <a href="donationSearch.php">Search for a Donation</a>
+    <br>
 
   </body>
 </html>
