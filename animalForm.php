@@ -36,7 +36,16 @@ div {
 	<body>
   <h3>Register</h3>
     <form action="animalUpdate.php" method="post">
-      Animal ID: <input type="text" name="animal_id"><br>
+      Animal ID: <input type="text" name="animal_id"
+      value= <?php 
+      include("connect.php");
+      $connection = connectToDB();
+      //$sql = "SELECT User_ID from user";
+      $animals = $connection->query("SELECT Animal_ID from animal");
+      echo $animals->num_rows+1;
+      $connection->close();
+      ?>
+      readonly><br>
       Name: <input type="text" name="animal_name"><br>
       Age: <input type="number" step="1" name="animal_age"><br>
       Color: <input type="text" name="animal_color"><br>

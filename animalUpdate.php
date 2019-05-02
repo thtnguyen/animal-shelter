@@ -113,7 +113,7 @@
             <h3>Additional Type Information</h3>
             <form action='horseUpdate.php' method='post'>
             Horse ID: <input type='text' value= $id name='horse_id' readonly><br>
-            Mane color: <input type='text name='horse_mane'><br>
+            Mane color: <input type='text' name='horse_mane'><br>
 
            <input type='submit'>
           </form>
@@ -122,8 +122,12 @@
           }
         }
       }else{
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $connection->error;
       }
+
+      //$connection->close();
+
+
     ?>
 
 	Your ID is: <?php echo $_POST["animal_id"]; ?>

@@ -4,16 +4,16 @@
       include('connect.php');
       $connection = connectToDB();
 
-      $dog_id = $_POST["dog_id"];
+      $cat_id = $_POST["cat_id"];
       $trained_str = $_POST["trained"];
       $trained = 0;
       if($trained_str === "yes") $trained = 1;
-      $coat_len = $_POST["dog_coat"];
+      $cat_temper = $_POST["cat_temper"];
 
 
-      $sql = "INSERT INTO dog (Dog_ID, Coat_Length, Is_House_Trained) VALUES ('$dog_id', '$coat_len', '$trained')";
+      $sql = "INSERT INTO cat (Cat_ID, Temperment, Is_House_Trained) VALUES ('$cat_id', '$cat_temper', '$trained')";
       if($connection->query($sql) === TRUE){
-        echo "Sucessfully registered new animal (dog).";
+        echo "Sucessfully registered new animal (cat).";
       }else{
         echo "Error: " . $sql . "<br>" . $connection->error;
       }
@@ -21,7 +21,7 @@
       //$connection->close();
     ?>
 
-	The new dog ID is: <?php echo $dog_id; ?>
+	The new cat ID is: <?php echo $cat_id; ?>
 	<br/>
 
   <?php
