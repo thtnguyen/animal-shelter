@@ -21,8 +21,6 @@
 	The new rodent ID is: <?php echo $rodent_id; ?>
 	<br/>
 
-  <?php
-	  echo "<a href='/index.php'>Back to home page </a> <br>";
-  ?>
+  <a href='/index.php'>Back to home page </a>
   </body>
 </html>

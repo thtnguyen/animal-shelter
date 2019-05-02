@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
 	<body>
   <h3>Add an Animal</h3>
     <form action="animalUpdate.php" method="post">
@@ -18,7 +21,7 @@
       Color: <input type="text" name="animal_color"><br>
       Description: <input type="text" name="animal_desc"><br>
       Size(lbs): <input type="text" name="animal_size"><br>
-      Type: 
+      Type: <br>
 
       <select name="animal_type" size="5">
       <option value="cat">Cat</option>
@@ -28,6 +31,7 @@
       <option value="horse">Horse</option>
       </select>
 
+      <br>
       Breed: <input type="text" name="animal_breed"><br>
 
       Is available: 
@@ -39,12 +43,12 @@
        name="availability" value="no">
       <label for="notAvailable">No</label>
 
+      <br>
       <input type="submit">
+      <br>
     </form>
     
-	<?php
-	  echo "<a href='/index.php'>Back to home page </a> <br>";
-  ?>
+  <a href='/index.php'>Back to home page </a> 
 
 
 	</body>

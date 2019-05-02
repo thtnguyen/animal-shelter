@@ -22,8 +22,6 @@
 	The new cat ID is: <?php echo $cat_id; ?>
 	<br/>
 
-  <?php
-	  echo "<a href='/index.php'>Back to home page </a> <br>";
-  ?>
+  <a href='/index.php'>Back to home page </a>
   </body>
 </html>
