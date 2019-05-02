@@ -18,6 +18,11 @@
     <a href="animalChangeList.php">Update/Delete/View Inquiries of an Animal</a>
 		<br>
 		
+    <a href="attemptAdopt.php">Attempt: adopt an animal</a>
+		<br>
+    <a href="attemptInquiry.php">Attempt: inquire about an animal</a>
+		<br>
+
     <a href="userQueryList.php">View Donations & Adoptions</a>
     <br>
 
