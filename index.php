@@ -15,7 +15,7 @@
     <a href="animalForm.php">Add New Animal</a>
 		<br>
 
-    <a href="animalChangeList.php">Update An Animal</a>
+    <a href="animalChangeList.php">Update/Delete/View Inquiries Of An Animal</a>
 		<br>
 		
     <a href="userQueryList.php">View Donations & Adoptions</a>

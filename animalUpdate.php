@@ -128,9 +128,6 @@
         echo "Error: " . $sql . "<br>" . $connection->error;
       }
 
-      //$connection->close();
-
-
     ?>
 
 	Your ID is: <?php echo $_POST["animal_id"]; ?>

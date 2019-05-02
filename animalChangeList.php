@@ -20,6 +20,7 @@
 
         echo "<p>ID: " . $id . "   Name: " . $name . "   Description: " . $desc . " <a href='animalChangeForm.php?id=$id'>Update this animal</a> ";
         echo " || <a href='animalDelete.php?id=$id'>Delete this animal</a>";
+        echo " || <a href='viewInquiries.php?id=$id'>View this animal's inquiries</a>";
       }
     }else{
       
