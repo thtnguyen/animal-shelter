@@ -13,7 +13,9 @@
   ?>
   <h3>Answer inquiry</h3>
   <form action=<?php echo "adminAnswer.php?p=$asker_id&a=$animal_id&d=$date"; ?> method="post">
+    If you are an Admin, enter your admin ID number and password below to answer the inquiry.<br>
     Admin ID: <input type="text" name="email"><br>
+    Password: <input type="password" name="user_pw"><br>
     Answer:<input type="text" name="answer"><br>
     <input type="submit">
   </form>

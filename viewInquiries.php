@@ -17,7 +17,7 @@
     if($query->num_rows == 0) echo "There are no inquiries for this animal.";
     while($row = $query->fetch_assoc()){
       
-      if($row["Answer"] === "") $unanswered=1;
+      if($row["Answer"] === NULL) $unanswered=1;
       
       $date = $row["Inquiry_Date"];
       $question = $row["Question"];

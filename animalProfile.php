@@ -123,7 +123,11 @@
       //     break;
       //   }
       // }
-      echo "Available for adoption? $avail <br>";
+      echo "Available for adoption? $avail <br><br>";
+      if($avail === "yes"){
+         echo "<a href='attemptInquiry.php?id=$animal_id'>Inquire about this animal</a> <br>";
+         echo "<a href='donateForm.php?id=$animal_id'>Donate to this animal</a>";
+      }
     }
   ?>
 

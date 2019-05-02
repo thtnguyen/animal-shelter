@@ -11,16 +11,13 @@
     include("connect.php");
 
     $connection = connectToDB();
-    
-    /* Currently should just show what animals are available for adoption, no idea how to actually adopt them */ 
-    /* Availability is an int, assume if Availability > 0, can adopt, if <= 0, can't */
     if($animals = $connection->query("SELECT * FROM animal WHERE Availability > 0")){
       while($row = $animals->fetch_assoc()){
         $id = $row[Animal_ID];
         $name = $row[Name];
         $desc = $row[Description];
 
-        echo "<p>ID: " . $id . "   Name: " . $name . "   Description: " . $desc . " <a href='animalChangeForm.php?id=$id'>This animal is up for adoption</a> ";
+        echo "<p>ID: " . $id . "   Name: " . $name . "   Description: " . $desc . " || <a href='adoptForm.php?id=$id'>This animal is up for adoption</a> ";
       }
     }else{
       
